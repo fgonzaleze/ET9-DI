@@ -6,17 +6,17 @@
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
-		<RootNamespace>E2T9</RootNamespace>
+		<RootNamespace>E3T9</RootNamespace>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>E2T9</ApplicationTitle>
+		<ApplicationTitle>E3T9</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.e2t9</ApplicationId>
-		<ApplicationIdGuid>0ee43d22-895f-40b9-86f9-1ff2b76b375f</ApplicationIdGuid>
+		<ApplicationId>com.companyname.e3t9</ApplicationId>
+		<ApplicationIdGuid>64313772-10cb-4577-82fa-763bb2d89a40</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -50,12 +50,6 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Update="Views\MainPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Biblioteca
+namespace E2T9.Models
 {
-     internal class clsPersona
+     internal class clsPersona : INotifyPropertyChanged // Implementamos la interfaz INotifyPropertyChanged
     {
         #region atributos
         private int id;
@@ -50,6 +51,8 @@ namespace Biblioteca
             get { return edad; }
             set { edad = value; }
         }
+
+        public event PropertyChangedEventHandler PropertyChanged;
         #endregion
 
     }

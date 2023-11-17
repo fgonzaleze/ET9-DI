@@ -21,7 +21,7 @@
                FontSize="18"
                HorizontalOptions="Center"
                VerticalOptions="Center"/>
-        
+
     </StackLayout>
     
 </ContentPage>
