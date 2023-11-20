@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E4T9.MainPage"
+             xmlns:model="clr-namespace:E4T9.Viewmodels">
+
+    <ContentPage.BindingContext>
+        <model:clsViewModelTroleo/>
+    </ContentPage.BindingContext>
+
+    <StackLayout 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        Spacing="15">
+        <Label 
+            WidthRequest="150"
+            Text="Nombre"/>
+        <Entry
+            Text="{Binding Nombre}" 
+            WidthRequest="150"/>
+        <Label 
+            WidthRequest="150"
+            Text="Apellidos"/>
+        <Entry 
+            Text="{Binding Apellidos}" 
+            WidthRequest="150"/>
+    </StackLayout>
+
+</ContentPage>
